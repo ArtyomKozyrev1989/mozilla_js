@@ -1,6 +1,7 @@
 const activeImg = document.querySelector("div.activeImg img");
 const otherImgs = document.querySelectorAll("div.imgChoices img");
 const btn = document.getElementById("darkerBtn");
+const activeImg2 = document.querySelector("div.activeImg img");
 
 
 function chooseImg(e) {
