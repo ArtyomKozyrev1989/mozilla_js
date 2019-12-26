@@ -1,7 +1,6 @@
 const textWindow = document.querySelector("input[type=text");
 const clickBtn = document.getElementById("clickBtn");
-cons bodyDiv = document.querySelector("div.bodyDiv");
-/*32323323 */
+const bodyDiv = document.querySelector("div.bodyDiv");
 
 function countDown() {
     let repeatNumber = Number(textWindow.value);
