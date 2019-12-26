@@ -1,0 +1,48 @@
+.wrapper {
+    width: 750px;
+    background-color: indianred;
+    padding: 10px 10px 10px 10px;
+}
+
+.imgChoices {
+    width: 100%;
+    display: flex;
+
+}
+
+.innerImg {
+    justify-content: space-between;
+    flex: 120px;
+    background-color: gray;
+    padding: 10px 10px 10px 10px;
+
+}
+
+div.innerImg img {
+    width: 120px;
+    height: 120px;
+}
+
+div.innerImg img:hover{
+    cursor: pointer;
+}
+
+div.activeImg img {
+    width: 580px;
+    height: 580px;
+}
+
+.activeImg {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#darkerImg {
+    filter: brightness(50%);
+}
+
+#darkerBtn {
+    z-index: 2;
+    position: absolute;
+    margin: 20px;
+}
