@@ -1,4 +1,4 @@
-const activeImg = document.querySelector("div.activeImg img");
+/* const activeImg = document.querySelector("div.activeImg img"); */
 const otherImgs = document.querySelectorAll("div.imgChoices img");
 const btn = document.getElementById("darkerBtn");
 
