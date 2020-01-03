@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Drawing</title>
+    <script defer src="canvas_drawing.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Радиус Лунки:</td>
+            <td><input type="text" id="blackRad" pattern="[\d\d]"></td>
+        </tr>
+
+        <tr>
+            <td>Число шаров: </td>
+            <td><input type="text" id="ballsNumber"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Старт"></td>
+        </tr>
+
+    </table>
+
+    <p class="errorParagraph"></p>
+
+    <canvas id="canvasDraw">
+        Your browser does not support canvas element
+    </canvas>
+
+</body>
+</html>
