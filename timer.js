@@ -7,6 +7,7 @@ let secondsLeft = 0;
 let active = false;
 
 let startCount = function() {
+    startBtn.disabled = true;
     if (!active) {
         timerHandler = setInterval(() => {
             secondsLeft += 1;
@@ -20,6 +21,7 @@ let stopCount = function() {
     if(active) {
         clearInterval(timerHandler);
         active = false;
+        startBtn.disabled = false;
     }
 };
 
@@ -29,6 +31,7 @@ let resetCounter = function() {
         resultField.innerText = `Seconds left: ${secondsLeft}`;
         clearInterval(timerHandler);
         active = false;
+        startBtn.disabled = false;
     }
 };
 
