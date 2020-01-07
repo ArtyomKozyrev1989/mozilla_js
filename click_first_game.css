@@ -1,0 +1,60 @@
+ul {
+    padding-left: 0px;
+}
+
+li {
+    display: inline;
+}
+
+body {
+    background-color: indianred;
+}
+
+span {
+    color: yellow;
+    padding: 12px;
+    border: 3px solid yellow;
+    margin: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+span#stepIndicator {
+    color: black;
+    border: none;
+}
+
+span#stepIndicator button {
+    font-family: "Times New Roman", "Times", "serif";
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: grey;
+    border: none;
+}
+
+span#stepIndicator p{
+    display: none;
+    padding: 15px;
+}
+
+
+
+span#stepIndicator button:hover:enabled {
+    background-color: aliceblue;
+}
+
+span#stepIndicator button:disabled {
+    background-color: gray();
+}
+
+span#stepIndicator button:disabled {
+    background-color: gray();
+}
+
+#spinner {
+    display: none;
+    margin: 50px;
+    font-size: 50px;
+}
