@@ -13,7 +13,7 @@ startBtn.addEventListener("click", () => {
         spinner.style.display = "none";
         startBtn.style.display = "none";
         startBtn.disabled = false;
-        window.addEventListener("keydown", waitKeyStroke);
+        document.addEventListener("keydown", waitKeyStroke);
     }, sleepSeconds * 1000);
 
 });
@@ -23,23 +23,25 @@ let randomInteger = function () {
 };
 
 let waitKeyStroke = function (e) {
-    readyMakeStep.innerText ="Players Go!"
+    readyMakeStep.innerText ="Players Go!";
     switch (e.code) {
         case "KeyA":
             readyMakeStep.innerText = "Player 1 Won!";
-            window.removeEventListener("keydown", waitKeyStroke);
+            document.removeEventListener("keydown", waitKeyStroke);
             setTimeout(prepareField, 5000);
             break;
         case "KeyL":
             readyMakeStep.innerText = "Player 2 Won!";
-            window.removeEventListener("keydown", waitKeyStroke);
+            document.removeEventListener("keydown", waitKeyStroke);
             setTimeout(prepareField, 5000);
             break;
+        default:
+            alert(`Wrong Key: ${e.code}`);
     }
-}
+};
 
 let prepareField = function () {
     startBtn.style.display = "inline-block";
     readyMakeStep.style.display = "none";
     readyMakeStep.innerText ="Players Go!";
-}
+};
