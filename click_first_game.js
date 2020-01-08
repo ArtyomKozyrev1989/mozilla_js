@@ -24,19 +24,20 @@ let randomInteger = function () {
 
 let waitKeyStroke = function (e) {
     readyMakeStep.innerText ="Players Go!";
-    switch (e.code) {
-        case "KeyA":
+    // in order to get support in Edge we should use e.which instead of e.code
+    switch (e.which) {
+        case 65: // letter a
             readyMakeStep.innerText = "Player 1 Won!";
             document.removeEventListener("keydown", waitKeyStroke);
             setTimeout(prepareField, 5000);
             break;
-        case "KeyL":
+        case 76: //letter l (small L letter not one digit)
             readyMakeStep.innerText = "Player 2 Won!";
             document.removeEventListener("keydown", waitKeyStroke);
             setTimeout(prepareField, 5000);
             break;
         default:
-            alert(`Wrong Key: ${e.code}`);
+            alert(`Wrong Key: ${e.which}`);
     }
 };
 
